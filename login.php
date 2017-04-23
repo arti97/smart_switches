@@ -1,6 +1,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <div class="container">
-<h2>Login to Your Account</h2>
+<h2>SmartSwitch:  Login</h2>
+<body style="background-image:url(bgimage.jpg)">
     
     <div class="regisFrm">
         <form action="onetwo.php" method="post">

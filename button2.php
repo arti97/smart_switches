@@ -1,3 +1,8 @@
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+<div class="container">
+<body style="background-image:url(bgimage4.jpg)">
+<title>Smart Switches</title>
+<h1>Internet of Things Implementation</h1>
 <?php
 $file = "buttonStatus2.txt";
 $handle = fopen($file,'w+');
@@ -16,21 +21,7 @@ fwrite($handle,$onstring);
 fclose($handle);
 print "
 <html>
-<body>
-<title>Smart Switches</title>
-<style type=text/css>
-h1{
-	padding-left: 300px;
-}
-h2{
-	position: absolute;
-	top: 100px;
-	left: 450px;
-}
-</style>
-<h1>Internet of Things Implementation</h2>
-<h2>The Device has been Turned ON </h2>
-</body>
+<h2>The Device has been Switched ON </h2>
 </html>
 ";
 }
@@ -42,21 +33,7 @@ fwrite($handle, $offstring);
 fclose($handle);
 print "
 <html>
-<body>
-<title>Smart Switches</title>
-<style type=text/css>
-h1{
-	padding-left: 300px;
-}
-h2{
-	position: absolute;
-	top: 100px;
-	left: 450px;
-}
-</style>
-<h1>Internet of Things Implementation</h2>
-<h2>The Device has been Turned OFF </h2>
-</body>
+<h2>The Device has been Switched OFF </h2>
 </html>
 ";
 }
@@ -69,24 +46,12 @@ fwrite($handle, $aonstring);
 fclose($handle);
 print "
 <html>
-<body>
-<title>Smart Switches</title>
-<style type=text/css>
-h1{
-	padding-left: 300px;
-}
-h2{
-	position: absolute;
-	top: 100px;
-	left: 450px;
-}
-</style>
-<h1>Internet of Things Implementation</h2>
-<h2>The Device is now based on automatic sensor data </h2>
-</body>
+<h2>The device functioning is now based on automatic sensor data </h2>
 </html>
 ";
 }
 //$con->commit();
 //$con->close();
 ?>
+</body>
+</div>
