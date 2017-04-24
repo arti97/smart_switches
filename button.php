@@ -15,7 +15,7 @@ $handle = fopen($file,'w+');
 //mysql_select_db("smartswitch", $con);*/
 if (isset($_POST['on']))
 {
-$onstring = "ON";
+$onstring = "LED ON";
 //$sql = "INSERT INTO lightStatus (on_off) VALUES ('ON')";
 fwrite($handle,$onstring);
 fclose($handle);
@@ -27,7 +27,7 @@ print "
 }
 else if(isset($_POST['off']))
 {
-$offstring = "OFF";
+$offstring = "LED OFF";
 //$sql = "INSERT INTO lightStatus (on_off) VALUES ('OFF')";
 fwrite($handle, $offstring);
 fclose($handle);
@@ -40,7 +40,7 @@ print "
 
 else if(isset($_POST['aon']))
 {
-$aonstring = "AON";
+$aonstring = "LED AON";
 //$sql = "INSERT INTO lightStatus (on_off) VALUES ('OFF')";
 fwrite($handle, $aonstring);
 fclose($handle);
