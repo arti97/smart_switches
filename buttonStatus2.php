@@ -1,5 +1,5 @@
 <?php
-$status = file_get_contents("buttonStatus.txt");
+$status = file_get_contents("buttonStatus2.txt");
 echo $status;
 /*$con = mysql_connect("localhost","root","root");
 if (!$con)
