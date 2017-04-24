@@ -38,11 +38,11 @@ print "
 ";
 }
 
-else if(isset($_POST['aon']))
+else if(isset($_POST['auto']))
 {
-$aonstring = "LED AON";
+$autostring = "LED AUTO";
 //$sql = "INSERT INTO lightStatus (on_off) VALUES ('OFF')";
-fwrite($handle, $aonstring);
+fwrite($handle, $autostring);
 fclose($handle);
 print "
 <html>
